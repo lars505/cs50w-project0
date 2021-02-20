@@ -1,0 +1,62 @@
+@import _variables
+header
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 80px
+    background: $navy    
+    box-shadow: 0 4px 25px -22px black
+    z-index: 100
+
+.header-content
+    max-width: 1200px
+    margin: auto
+    display: flex
+    justify-content: space-between
+.logo
+    height: 80px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0px 20px
+    h1
+        b
+            color: $blue
+
+.menu
+    height: 80px
+    nav
+        height: 100%
+        ul
+            height: 100%
+            display: flex
+            list-style: none
+            li
+                height: 100%
+                margin: 0px 20px
+                display: flex
+                justify-content: center
+                align-items: center
+                position: relative
+                a
+                    //color: #777777
+                    color: $white
+                    font-size: 18px
+                    transition: color 300ms
+                    &:hover
+                        color: $blue
+                        text-decoration: none
+    
+.menu-selected:before
+        content: ''
+        width: 100%
+        height: 4px
+        background: $blue
+        position: absolute
+        top: 0
+        left: 0
+.menu
+    .text-menu-selected
+        color: $blue
+        

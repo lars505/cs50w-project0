@@ -1,0 +1,76 @@
+@import _variables
+//portada
+.contenedor-imagen
+    width: 100%
+    height: 500px
+    position: relative
+    margin-top: 80px
+    background-image: url(https://source.unsplash.com/Pr578ZCufII/2400x1606)
+    background-position: center
+    background-repeat: no-repeat
+    //background-attachment: fixed
+    background-size: cover
+    &::before
+        content: ''
+        width: 100%
+        height: 100%
+        background: #26acff91
+        position: absolute
+        top: 0
+        left: 0
+    h1
+        font-size: 60px
+        font-weight: 500
+        color: $white
+        margin-bottom: 20px
+    p
+        color: $white
+        font-size: 20px
+        font-weight: 300
+        text-align: center
+
+.contenedor-imagen-info
+    max-width: 800px
+    height: 500px
+    margin: auto
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    position: relative
+    z-index: 99
+
+.contenedor-contenido
+    width: 1200px
+    margin: auto
+    margin-top: 40px
+    display: flex
+    justify-content: center
+    article
+        width: 100%
+        padding: 20px
+        padding-bottom: 40px
+        box-shadow: -10px 0 20px -30 $black
+        border-radius: 6px
+        position: relative
+        overflow: hidden
+        &::before
+            content: ''
+            width: 100% 
+            height: 6px
+            position: absolute
+            top: 0
+            left: 0
+            background: $blue
+        h1  
+            margin-top: 20px
+            font-weight: 500
+            font-size: 40px
+        p
+            margin-top: 20px
+            font-size: 18px
+            text-align: justify
+        img
+            width: 100%
+            margin-top: 20px
+
