@@ -395,6 +395,61 @@ header {
   border-top-right-radius: 15px;
 }
 
+.container1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 80px;
+  padding: 20px;
+  gap: 20px;
+  border: 1vh solid #3D9970;
+}
+
+[class^="block"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 33.33333vh;
+  gap: 20px;
+}
+
+@media (max-width: 480px) {
+  [class^="block"] {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 500px;
+  }
+}
+
+[class^="box-"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 33.33333%;
+      flex-basis: 33.33333%;
+  background-color: #c1c1c1;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 44px;
+  margin: 5px;
+}
+
 @media screen and (max-width: 1220px) {
   .header-content, .contenedor-contenido, .contenedor-footer footer {
     max-width: 1000px;
