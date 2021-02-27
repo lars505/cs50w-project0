@@ -1,8 +1,13 @@
 @import _variables
+
+%background
+    background: #6710f212;
+    
+
 %articulos
     background: 
     padding: 20px
-    box-shadow: 0 0 60px -22px black
+    box-shadow: 0 0 40px -22px black
     margin-bottom: 20px
     height: auto
 
@@ -17,8 +22,13 @@
     align-items: center
     justify-content: center
     
+    .img
+        margin-top: 80px
+        margin-bottom: 50px
     
-
+    
+.fondo
+    @extend %background
 
 .ariculos
     @extend %articulos
@@ -32,3 +42,9 @@
     @extend %container
 .contenedor-imagen-cs50
     @extend  %contenedor-imagen-cs50
+
+.hr
+    height: 3px
+    background-color: $blue
+    margin-top: 15px
+    margin-bottom: 15px 

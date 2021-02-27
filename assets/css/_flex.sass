@@ -18,20 +18,40 @@ $sb: ( mobile: 480px, tableta: 768px, desktop: 1440px )
 .container1
     display: flex
     flex-direction: column
-    margin-top: 80px
-    padding: 20px
-    gap: 20px
+    //margin-top: 80px
+    //padding: 20px
+    //gap: 20px
     border: 1vh solid $olive
 
-[class ^="block"]
+.contenedor2
+    //background-color: $lime
+    //display: flex
+    //align-items: center
+    //justify-content: center
+    width: 600px
+    margin: auto
+
+
+[class ^="block-1"]
     //border: 3px solid $orange
     display: flex
-    flex-direction: row
+    align-items: center
+    justify-content: center
     height: (100vh)/3
     gap: 20px
     @include query(mobile)
         flex-direction: column
         height: 500px
+
+//[class ^="block"]
+    //border: 3px solid $orange
+    //display: flex
+    //flex-direction: 
+    //height: (100vh)/3
+    //gap: 20px
+    //@include query(mobile)
+        //flex-direction: column
+        //height: 500px
 
 [class ^="box-"]
     display: flex
