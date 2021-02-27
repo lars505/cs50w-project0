@@ -7,7 +7,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -138,7 +138,7 @@ header {
   height: 500px;
   position: relative;
   margin-top: 80px;
-  background-image: url(https://source.unsplash.com/Pr578ZCufII/2400x1606);
+  background-image: url(https://source.unsplash.com/w9KEokhajKw/2400x1606);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -154,16 +154,22 @@ header {
   left: 0;
 }
 
-.contenedor-imagen h1 {
-  font-size: 60px;
-  font-weight: 500;
-  color: #FFFFFF;
+.contenedor-imagen .gradiente {
+  background: -webkit-gradient(linear, left top, right bottom, from(red), to(black));
+  background: linear-gradient(to bottom right, red, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  font-size: 125px;
   margin-bottom: 20px;
 }
 
 .contenedor-imagen p {
   color: #FFFFFF;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 300;
   text-align: center;
 }
@@ -237,6 +243,28 @@ header {
 .contenedor-contenido article img {
   width: 100%;
   margin-top: 20px;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .contenedor-aside aside {
@@ -483,6 +511,18 @@ header {
   }
 }
 
+@media screen and (max-width: 880px) {
+  .contenedor-imagen {
+    max-width: 100%;
+    background-color: #0000;
+    margin: auto;
+  }
+  .contenedor-imagen .gradiente {
+    max-width: 80%;
+    font-size: 90px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .container-all {
     -webkit-transition: all 300ms cubic-bezier(1, 0, 0, 1);
@@ -539,6 +579,9 @@ header {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
     background: #001F3F;
+  }
+  .gradiente {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -5,7 +5,7 @@
     height: 500px
     position: relative
     margin-top: 80px
-    background-image: url(https://source.unsplash.com/Pr578ZCufII/2400x1606)
+    background-image: url(https://source.unsplash.com/w9KEokhajKw/2400x1606)
     background-position: center
     background-repeat: no-repeat
     //background-attachment: fixed
@@ -18,16 +18,25 @@
         position: absolute
         top: 0
         left: 0
-    h1
-        font-size: 60px
-        font-weight: 500
-        color: $white
+    .gradiente
+        background: -webkit-linear-gradient(left top, red, black);
+        background: linear-gradient(to bottom right, red, black);
+        -webkit-background-clip: text;  
+        -webkit-text-fill-color: transparent;
+        
+        animation-duration: 3s
+        animation-name: slidein
+        font-size: 125px
+        //font-size: 60px
+        //font-weight: 500
+        //color: $white
         margin-bottom: 20px
     p
         color: $white
-        font-size: 20px
+        font-size: 30px
         font-weight: 300
         text-align: center
+        
 
 .contenedor-imagen-info
     max-width: 800px
@@ -74,3 +83,12 @@
             width: 100%
             margin-top: 20px
 
+
+@keyframes slidein
+  from 
+    margin-left: 100%
+    width: 300%
+
+  to
+    margin-left: 0%
+    width: 100%

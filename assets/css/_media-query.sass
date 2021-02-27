@@ -14,12 +14,24 @@
     article
         box-shadow: 0 0 0 0
     
+    
     .contenedor-aside
         display: flex
         justify-content: center
         aside
             max-width: 300px
             margin: 10px
+
+@media screen and ( max-width: 880px  )
+    .contenedor-imagen
+        max-width: 100%
+        background-color: #0000
+        margin: auto
+        .gradiente
+            max-width: 80%
+            font-size: 90px
+            
+
 @media screen and ( max-width: 800px  )
 
     .container-all
@@ -60,3 +72,5 @@
         width: 300px
         transform: translateX(0px)
         background: $navy
+    .gradiente
+        display: none
